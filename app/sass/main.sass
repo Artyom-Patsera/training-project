@@ -1,0 +1,434 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+*
+    padding: 0
+    margin: 0
+
+ul, h1, h2, h3, h4
+    margin: 0
+    padding: 0
+    font-family: $boldp
+    
+a
+    text-decoration: none
+li
+    list-style: none
+    
+div, section, article, ul, li,
+h1, h2, h3, a, input
+    box-sizing: border-box
+
+html, body
+	height: auto
+    min-width: 320px
+
+
+
+body
+    width: 100%
+    background: #fff
+    font-size: 16px
+    line-height: 1.5
+    font-family: $default-font
+    position: relative
+
+.button
+    display: inline-block
+    padding: 10px
+    text-transform: uppercase
+    text-align: center
+    margin-top: 50px
+    color: $accent
+    border: solid 1.5px $accent
+    transition: all 0.4s
+    &:hover
+        color: red
+        border: solid 1.5px red
+h1
+	font-size: 32px
+
+h2
+	font-size: 22px
+
+h3
+	font-size: 14px
+
+h2, h3
+    text-transform: uppercase
+    color: #000
+
+
+.text
+    color: #8d8b93
+
+.margin-b-80
+	margin-bottom: 80px
+.wrapper
+    width: 100%
+    min-width: 320px
+    height: auto
+    background: #fff
+    position: relative
+    .haeder
+        width: 100%
+        min-width: 320px
+        min-height: 800px
+        background-color: $bg
+        background: url(../img/bg-head.jpg) no-repeat center center
+        background-size: cover
+        .container
+            position: relative
+            margin: 0 auto
+           
+.top-line
+    width: 100%
+    min-width: 320px
+    position: relative
+    margin: 0 auto
+    font-family: $bmenu
+    text-transform: uppercase
+    font-size: 12px
+    li 
+        display: inline-block
+        
+        a 
+            display: inline-block
+            color: #fff
+            padding: 0 10px
+            transition: all 0.4s
+            &:hover
+                color: $accent
+
+
+.logo, .nav
+   position: absolute
+   // z-index: 100
+
+.logo
+    top: 10px
+    left: 10px
+    // z-index: 10
+.nav
+    right: 0
+    top: 20px
+
+.wrapp-info
+    width: 100%
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    height: 800px
+    
+
+    .info
+        width: 80%
+        min-width: 320px
+        text-align: center
+        color: #fff
+        margin: 0 auto
+        align-self: center
+
+        h1
+            padding: 12px 0
+        .head-text
+            margin-top: 30px
+
+
+.caption:after
+    content: ''
+    display: block
+    height: 1.5px
+    width: 50px
+    margin: 0 auto
+    background-color: $accent
+
+.menutrigger
+    color: #fff
+    text-align: right
+    display: none
+    .fa
+        margin-right: 10px
+        cursor: pointer
+        font-size: 18px
+        &:hover
+            color: $accent 
+
+    
+
+.two-section
+    width: 100%
+    min-width: 320px
+    padding-top: 65px 
+    font-size: 16px
+    .button
+        margin-top: 35px
+    p 
+        padding: 30px 0
+        padding-bottom: 0
+    .video
+        width: 100%
+        min-width: 320px
+        min-height: 550px
+        background-color: $bg
+        background: url(../img/video.jpg) center no-repeat
+        background-size: cover
+        display: flex
+        section
+            margin: auto
+            color: #fff 
+            text-align: center
+            .play
+               display: inline-block
+               color: #fff
+               transition: all 0.4s 
+               &:hover
+                    color: $accent
+               
+               .fa 
+                    
+                    // // font-size: 100px
+                    // font-weight: 100
+            p 
+                text-transform: uppercase
+                padding-top: 10px
+                font-weight: 900
+                
+        
+        
+    .container
+        margin-bottom: 70px
+
+.img-two-section
+    text-align: center
+   
+   
+
+.text-two-section
+    
+
+
+.play-video
+	width: 100%
+	min-width: 320px 
+	min-height: 0
+	background: #000
+	top: 0
+	left: 0
+	position: fixed
+	overflow: hidden
+	opacity: 1 
+	// display: none
+	display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    transition: all 1s 
+    min-width: 320px
+    z-index: 999
+
+    
+    
+.cont-video
+	padding: 0
+	margin: auto
+	background: #000
+   	// display: none
+	transition: all 1s 
+	min-width: 320px
+	video
+		max-width: 100%
+		min-width: 320px
+		display: none
+	
+
+.close
+	display: block
+	width: 100%
+	min-width: 320px
+	text-align: right
+	color: #fff 
+	transition: all 0.4s
+	display: none
+	&:hover
+		color: red
+
+
+
+.section-three
+	padding: 80px 0
+	background-color: #fff
+	width: 100%
+	min-width: 320px
+	.three-caption
+		width: 100%
+		text-align: center
+	.text
+		text-align: center
+		padding: 9px 0
+		margin-bottom: 80px
+        
+        
+	.wrapp-colum
+		text-align: center
+		width: 100%
+		min-width: 320px
+		.text
+			margin: 0
+		h3
+			padding: 25px 0	
+
+.text-after
+	display: block
+    
+.text-after:after
+	content: ""
+	display: block
+	width: 50px
+	height: 2px
+	margin: 0 auto
+	background: grey
+	position: relative
+	top: 9px
+
+.section-four
+	width: 100%
+	min-width: 320px
+	min-height: 712px
+	background-color: $bg 
+	background: url(../img/bg-4.jpg) no-repeat center center
+	background-size: cover
+	padding: 70px 0
+	color: #fff
+	.four-caption
+		text-align: center
+		h2
+			color: #fff
+	.text
+		text-align: center
+		padding: 9px 0
+		margin-bottom: 50px
+
+	.wrapp-team
+		text-align: center
+		
+		.np
+			padding: 20px 0
+			width: 229px
+			margin: 0 auto
+			border-bottom: 2px solid gray
+			.name
+				text-transform: uppercase
+				font-weight: 900
+				font-size: 16px
+			.profession
+				text-transform: uppercase
+				font-weight: 100
+				font-size: 14px
+				opacity: 0.7
+	.section-4-text
+		text-align: center
+		margin-top: 65px
+	.button
+		display: block
+		margin: 0 auto
+		margin-top: 30px
+		min-width: 155px
+
+.six-section
+	padding: 65px 0
+	width: 100%
+	min-width: 320px
+	background-color: #FFF
+
+	.wrapp-form
+		width: 100%
+		min-width: 320px
+		.caption-six
+			margin-bottom: 50px
+		form
+			input
+				display: block
+				padding: 15px 0
+				padding-left: 5px
+				font-size: 14px
+				margin-bottom: 10px
+				border: none
+				min-width: 320px
+				
+
+			.button
+				margin-top: 180px
+				min-width: 120px
+				border: solid 1.5px $accent
+				background: #fff
+				&:hover
+					color: red
+       				border: solid 1.5px red
+
+.row
+	padding: 0
+
+
+
+           
+        
+        
+
+
+    
+
+
+
+  
+  
+        
+        
+        
+       
+    
+    
+
+    
+    
+    
+
+
+    
+    
+    
+
+    
+
+
+    
+
+@import "media" // Всегда в конце
